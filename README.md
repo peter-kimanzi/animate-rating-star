@@ -3,9 +3,7 @@
 ## Technologies used
 * Html
 * CSS
-# Video tutorial
 
-    https://youtu.be/J1FZ3_s_8RY
 
 # Resource
 
