@@ -1,6 +1,6 @@
-# animate-rating-star
+## animate-rating-star
 
-    Pure CSS Animated Star Rating - How To Create Star Rating with Html and CSS
+##
 
 # Video tutorial
 
