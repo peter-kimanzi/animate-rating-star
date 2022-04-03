@@ -1,0 +1,107 @@
+:root {
+    --body-bg: #1c2451;
+    --txt-color: #f1f1f1;
+    --star-color: #d4d4d4;
+    --yellow: #ffeb3b;
+    --blue: #0b75cb;
+    --green: #449a47;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 6rem;
+    background-color: var(--body-bg);
+    font-family: 'Inter', sans-serif;
+    color: var(--txt-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 0 10px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.rating-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rating-label {
+    margin-right: 2rem;
+}
+
+.rating-star {
+    position: relative;
+    display: flex;
+    margin: 10px 0;
+    flex-direction: row-reverse;
+}
+
+.rating-star input {
+    position: relative;
+    width: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    appearance: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.rating-star input::before {
+    content: '\eeb8';
+    position: absolute;
+    font-family: boxicons;
+    font-size: 34px;
+    position: absolute;
+    left: 4px;
+    color: var(--star-color);
+    transition: all .3s;
+}
+
+.rating-star input:nth-child(2n + 1)::before {
+    right: 4px;
+    left: initial;
+}
+
+.rating-star input:hover ~ input::before,
+.rating-star input:hover::before,
+.rating-star input:checked ~ input::before,
+.rating-star input:checked::before {
+    color: var(--yellow);
+}
+
+.rating-star.rating-blue input:hover ~ input::before,
+.rating-star.rating-blue input:hover::before,
+.rating-star.rating-blue input:checked ~ input::before,
+.rating-star.rating-blue input:checked::before {
+    color: var(--blue);
+}
+
+.rating-star.rating-green input:hover ~ input::before,
+.rating-star.rating-green input:hover::before,
+.rating-star.rating-green input:checked ~ input::before,
+.rating-star.rating-green input:checked::before {
+    color: var(--green);
+}
