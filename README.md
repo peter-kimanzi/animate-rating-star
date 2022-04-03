@@ -1,7 +1,8 @@
 # animate-rating-star
 
 ## Technologies used
-
+* Html
+* 
 # Video tutorial
 
     https://youtu.be/J1FZ3_s_8RY
