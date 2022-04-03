@@ -1,6 +1,6 @@
-## animate-rating-star
+# animate-rating-star
 
-##
+## Technologies used
 
 # Video tutorial
 
