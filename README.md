@@ -3,6 +3,7 @@
 ## Technologies used
 * Html
 * CSS
+* JQu
 
 ### Live site can be viewed here
 
